@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('./images/bg-desktop.svg');
+    background-size: auto;
+    /* background-position: top right; */
+    background-color: rgb(139, 0, 219);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+header h2 {
+    padding-left: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+
+}
+
+img {
+    display: block;
+    position: relative;
+    width: auto;
+    margin: 4em 0;
+}
+
+.huddle-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+p {
+    font-weight: lighter;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+
+button {
+    color: rgb(139, 0, 219);
+    width: 250px;
+    margin: 0 auto 5em auto;
+    padding: 1.45em;
+    background-color: white;
+    border-radius: 60px;
+    border: transparent;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+footer i {
+    margin: 15px;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer i:hover,
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .wid1 {
+        width: 59%;
+    }
+
+    .wid2 {
+        width: 38%;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+    .huddle-text {
+        margin: 90px 0 0 10px;
+        padding: 10em auto;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    h1,
+    p,
+    button,
+        {
+        text-align: left;
+    }
+
+    h1 {
+        text-align: unset;
+        font-size: 20px;
+    }
+
+    p {
+        line-height: unset;
+        font-size: 13px;
+        text-align: unset;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+
+    button {
+        margin-bottom: 2em;
+    }
+}
